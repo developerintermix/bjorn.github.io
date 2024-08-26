@@ -27,7 +27,7 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 ### Links
 
 - Solution URL: [Add solution URL here](https://github.com/developerintermix/bjorn.github.io)
-- Live Site URL: [Add live site URL here](https://tbv-web.nl/stage.nl)
+- Live Site URL: [Add live site URL here](https://developerintermix.github.io/bjorn.github.io/)
 
 ## My process
 
