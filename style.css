@@ -1,0 +1,123 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 130%;
+  }
+  
+body {
+    font-family: Arial, sans-serif; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: start;
+    background-color: hsl(330, 100%, 98%); 
+    
+  }
+  
+  .card {
+    background-color: #fff; 
+    border-radius: 15px; 
+    width: 90%;
+    max-width: 600px;
+    padding: 20px;
+  }
+
+  .card__content {
+    margin: 10px;
+  }
+  
+  .card__img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px; 
+  }
+  
+  .card__header {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+
+  .card__prep { 
+    background-color:  hsl(330, 100%, 98%);
+    text-align: start;
+    padding: 10px;
+    border-radius: 15px;
+  }
+
+  .card-prep__title { 
+    padding-left: 25px;
+    font-size: 16px;
+    color: hsl(332, 51%, 32%);
+    font-family: "Young Serif", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+    .card-prep__span, .card-instructions__span {
+        font-weight: bold;
+    }
+
+  .card-prep__item {
+    padding: 3px;
+    padding-left: 15px;
+  }
+
+  .card__ingredients {
+    padding: 10px;
+  }
+
+  .card-ingredients__title, .card-instructions__title , .card-nutrition__title {
+    margin-top: 20px;
+    color: hsl(11, 33%, 39%);
+    font-size: 24px;
+    font-family: "Outfit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+
+  .card-list__item {
+    padding-left: 15px;
+  }
+
+  .card-ingredients__list , .card-instructions__list {
+    padding-left: 20px;
+  }
+
+
+  .card-instructions__item {
+    padding: 3px;
+    padding-left: 20px;
+  }
+
+  .card-instructions__item::marker {
+    color: hsl(11, 33%, 39%);
+    font-weight: bold;
+  }
+
+  .card-instructions__list {
+    font-size: 16px;
+    font-family: "Outfit", sans-serif;
+  }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+#nutrition__color {
+    color: hsl(11, 33%, 39%);
+}

@@ -9,69 +9,89 @@
   <title>Frontend Mentor | Recipe page</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+<div class="card"> 
+  <div class="card__content">
 
-  Simple Omelette Recipe
-
-  An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
-  to perfection, optionally filled with your choice of cheese, vegetables, or meats.
-
-  Preparation time
-
-  Total: Approximately 10 minutes
-  Preparation: 5 minutes
-  Cooking: 5 minutes
-
-  Ingredients
-
-  2-3 large eggs
-  Salt, to taste
-  Pepper, to taste
-  1 tablespoon of butter or oil
-  Optional fillings: cheese, diced vegetables, cooked meats, herbs
-
-  Instructions
-
-  Beat the eggs: In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
-  You can add a tablespoon of water or milk for a fluffier texture.
-
-  Heat the pan: Place a non-stick frying pan over medium heat and add butter or oil.
-
-  Cook the omelette: Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
-  the eggs evenly coat the surface.
-
-  Add fillings (optional): When the eggs begin to set at the edges but are still slightly runny in the 
-  middle, sprinkle your chosen fillings over one half of the omelette.
-
-  Fold and serve: As the omelette continues to cook, carefully lift one edge and fold it over the 
-  fillings. Let it cook for another minute, then slide it onto a plate.
-
-  Enjoy: Serve hot, with additional salt and pepper if needed.
-
-  Nutrition
-
-  The table below shows nutritional values per serving without the additional fillings.
-
-  Calories
-  277kcal
-
-  Carbs
-  0g
-
-  Protein
-  20g
-
-  Fat
-  22g
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <img src="assets/images/image-omelette.jpeg" alt="omelette img" class="card__img">
+    <h1 class="card__header"> Simple Omelette Recipe</h1>
+    <p>
+      An easy and quick dish, perfect for any meal. This classic omelette combines beaten eggs cooked 
+      to perfection, optionally filled with your choice of cheese, vegetables, or meats.
+    </p>
+    <div class="card__inner"> 
+      <div class="card__prep card-prep">
+        <h3 class="card-prep__title">
+          Preparation time
+        </h3>
+        <ul class="card-prep__list">
+          <li class="card-prep__item"><span class="card-prep__span">Total:</span> Approximately 10 minutes</li>
+          <li class="card-prep__item"><span class="card-prep__span">Preparation:</span>span 5 minutes</li>
+          <li class="card-prep__item"><span class="card-prep__span">Cooking:</span> 5 minutes</li>
+        </ul>
+      </div>
+      <div class="card__ingredients card-ingredients">
+        <h2 class="card-ingredients__title"> Ingredients </h2>
+        
+        <ul class="card-ingredients__list card-list">
+          <li class="card-list__item">2-3 large eggs</li>
+          <li class="card-list__item">Salt, to taste</li>
+          <li class="card-list__item">Pepper, to taste</li>
+          <li class="card-list__item"> 1 tablespoon of butter or oil</li>
+          <li class="card-list__item"> Optional fillings: cheese, diced vegetables, cooked meats, herbs</li>
+        </ul>
+      </div>
+    </div>
+    <hr>
+    <div class="card__instructions card-instructions">
+      <h2 class="card-instructions__title"> Instructions </h2>
+      <ol class="card-instructions__list">
+        <li class="card-instructions__item"><span class="card-instructions__span">Beat the eggs:</span>  In a bowl, beat the eggs with a pinch of salt and pepper until they are well mixed. 
+          You can add a tablespoon of water or milk for a fluffier texture. </li>
+        <li class="card-instructions__item"><span class="card-instructions__span">Heat the pan:</span> Place a non-stick frying pan over medium heat and add butter or oil.</li>
+        <li class="card-instructions__item"><span class="card-instructions__span">Cook the omelette:</span> Once the butter is melted and bubbling, pour in the eggs. Tilt the pan to ensure 
+              the eggs evenly coat the surface. </li>
+        <li class="card-instructions__item"><span class="card-instructions__span">Add fillings (optional):</span>  When the eggs begin to set at the edges but are still slightly runny in the 
+            middle, sprinkle your chosen fillings over one half of the omelette. </li>    
+        <li class="card-instructions__item"><span class="card-instructions__span">Fold and serve:</span> As the omelette continues to cook, carefully lift one edge and fold it over the 
+            fillings. Let it cook for another minute, then slide it onto a plate. </li>
+        <li class="card-instructions__item"><span class="card-instructions__span">Enjoy:</span> Serve hot, with additional salt and pepper if needed. </li>
+      </ol>
+    </div> 
+    <hr> 
+    <div class="card__nutrition card-nutrition">
+      <h2 class="card-nutrition__title">Nutrition</h2>
+      <p>
+        The table below shows nutritional values per serving without the additional fillings.
+      </p>
+      <div class="card-nutrition__table card-nutrition-table">
+        <table class="card-nutrition-table">
+        <tbody>
+            <tr>
+                <td>Calories</td>
+                <td id="nutrition__color">277 kcal</td>
+            </tr>
+            <tr>
+                <td>Carbs</td>
+                <td id="nutrition__color">0 g</td>
+            </tr>
+            <tr>
+                <td>Protein</td>
+                <td id="nutrition__color">20 g</td>
+            </tr>
+            <tr>
+                <td>Fat</td>
+                <td id="nutrition__color">22 g</td>
+            </tr>
+        </tbody>
+        </table>
+      </div>
+    </div>
   </div>
+</div>
+
+
 </body>
 </html>
