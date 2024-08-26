@@ -40,6 +40,10 @@ body {
     margin: 10px 0;
   }
 
+  .card__desc { 
+    color: grey;
+  }
+
   .card__prep { 
     background-color:  hsl(330, 100%, 98%);
     text-align: start;
@@ -120,4 +124,37 @@ tr:hover {
 
 #nutrition__color {
     color: hsl(11, 33%, 39%);
+}
+
+@media (max-width: 375px) {
+    .card {
+        padding: 15px;
+        width: 95%;
+    }
+
+    .card__header {
+        font-size: 20px;
+        margin: 8px 0;
+    }
+
+    .card-prep__title, .card-ingredients__title, .card-instructions__title, .card-nutrition__title {
+        font-size: 20px;
+    }
+
+    .card-prep__title, .card-prep__item, .card-ingredients__list, .card-instructions__list {
+        padding-left: 10px;
+    }
+
+    .card-prep__item, .card-instructions__item {
+        padding-left: 12px;
+    }
+
+    .card-instructions__list {
+        font-size: 14px;
+    }
+
+    th, td {
+        padding: 8px;
+    }
+
 }
