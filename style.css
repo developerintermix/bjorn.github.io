@@ -1,179 +1,206 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
 * {
-  font-family: "Outfit", sans-serif;
-    font-style: normal;
+  font-family: 'Outfit';
 }
-body, html {
-    margin: 0;
-    padding: 0;
-    margin-top: 15px;
-  }
+
+:root {
+  --White: hsl(0, 0%, 100%);
+  --Stone-100: hsl(30, 54%, 90%);
+  --Stone-150: hsl(30, 18%, 87%);
+  --Stone-600: hsl(30, 10%, 34%);
+  --Stone-900: hsl(24, 5%, 18%);
   
+  --Brown-800: hsl(14, 45%, 36%);
+  
+  --Rose-800: hsl(332, 51%, 32%);
+  --Rose-50: hsl(330, 100%, 98%);
+}
+
+
 body {
-    font-family: Arial, sans-serif; 
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: start;
-    background-color: hsl(330, 100%, 98%); 
-    
-  }
-  
-  .card {
+  background-color: var(--Stone-100);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+  margin-top: 90px;
+  height: 1900px;
+}
+
+.card {
     background-color: #fff; 
     border-radius: 15px; 
-    width: 100%;
-    max-width: 600px;
-    padding: 20px;
-  }
+    width: 736px;
+    height: 1726px;
+}
 
-  .card__img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover; 
-    border-radius: 8px; 
-  }
+.card__img {
+  max-width: 656px;
+  max-height: 300px;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 40px;
+  border-radius: 8px; 
+}
+
+.card__content {
   
-  .card__header {
-    font-size: 24px;
-    margin: 10px 0;
-  }
+  max-width: 656px;
+  max-height: 1280px;
+  margin: 0 40px;
+}
 
-  .card__desc { 
-    color: grey;
-  }
+.card__header {
+  color: var(--Stone-900);
+  font-size: 40px;
+  margin: 40px 40px 32px 0;
+  width: 656px;
+  height: 40px;
+}
 
-  .card__prep { 
-    background-color:  hsl(330, 100%, 98%);
-    text-align: start;
-    padding: 10px;
-    border-radius: 15px;
-  }
+.card__desc { 
+  height: 48px;
+  color: var(--Stone-600);
+  font-size: 16px;
 
-  .card-prep__title { 
-    padding-left: 25px;
-    font-size: 16px;
-    color: hsl(332, 51%, 32%);
-    font-family: "Young Serif", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
+}
+/* stop header */
+.card__prep { 
+  background-color:  hsl(330, 100%, 98%);
+  max-width: 625px;
+  max-height:198px;
+  text-align: start;
+  padding: 24px;
+  margin: 0 0 32px 0;
+}
 
-    .card-prep__span, .card-instructions__span {
-        font-weight: bold;
-    }
-
-  .card-prep__item {
-    padding: 3px;
-    padding-left: 15px;
-  }
-
-  .card__ingredients {
-    padding: 10px;
-  }
-
-  .card-ingredients__title, .card-instructions__title , .card-nutrition__title {
-    margin-top: 20px;
-    color: hsl(11, 33%, 39%);
-    font-size: 24px;
-    font-family: "Outfit", sans-serif;
-    font-weight: 800;
-    font-style: normal;
-  }
-
-  .card-list__item {
-    padding-left: 15px;
-  }
-
-  .card-ingredients__list , .card-instructions__list {
-    padding-left: 20px;
-  }
+.card-prep__item::marker {
+  color: var(--Rose-800);
+}
 
 
-  .card-instructions__item {
-    padding: 3px;
-    padding-left: 20px;
-  }
+.card-prep__title { 
+  margin: 24px 24px 16px 24px;
+  font-size: 20px;
+  color: var(--Rose-800);
+}
 
-  .card-instructions__item::marker {
-    color: hsl(11, 33%, 39%);
-    font-weight: bold;
-  }
+.card-prep__span, .card-instructions__span {
+  font-weight: bold;
+}
 
-  .card-instructions__list {
-    font-size: 16px;
-    font-family: "Outfit", sans-serif;
-  }
+.card-prep__item {
+  color: var(--Stone-600);
+  margin: 8px 0;
+  padding-left: 24px;
+}
+/* stop prep */
+.card-ingredients__title  {
+  margin: 32px 0 0 0;
+  color: var(--Brown-800);
+  font-size: 28px;
+}
+
+.card-ingredients__list , .card-instructions__list {
+  padding-left: 20px;
+}
+.card__ingredients {
+  margin-bottom: 32px;
+}
+.card-list__item, .card-instructions__item {
+  padding: 0 0 8px 28px;
+  color: var(--Stone-600);
+  font-size: 16px;
+}
+
+.card-list__item:last-child {
+  padding: 0 0 32px 28px;
+}
+
+.card__instructions , .card__nutrition {
+  margin-top: 32px;
+  margin-bottom: 32px;
+}
+
+
+
+.card-instructions__item {
+  padding: 3px;
+  padding-left: 20px;
+}
+
+.card-instructions__item::marker, .card-list__item::marker {
+  color: hsl(11, 33%, 39%);
+  font-weight: bold;
+}
+
+
+.card-instructions__title  {
+  margin: 32px 0;
+  color: var(--Brown-800);
+  font-size: 28px;
+}
+
+.card-nutrition__title { 
+  margin: 0 0 24px 0;
+  color: var(--Brown-800);
+  font-size: 28px;
+}
+
+.card-nutrition p {
+  color: var(--Stone-600);
+  margin: 0 0 24px 0 ;
+}
+
+.card-instructions__title {
+  margin-top: 0;
+}
+
+.card-nutrition-table {
+  color: var(--Stone-600);
+}
+
 
 table {
-    width: 100%;
-    border-collapse: collapse;
+  width: 100%;
+  border-collapse: collapse;
 }
 
 th, td {
-    padding: 10px;
-    text-align: left;
-    border-bottom: 1px solid #ddd;
+  padding: 16px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
 }
 
 table tr:last-child td {
-  border-bottom: none;
+border-bottom: none;
+}
+
+table td:last-child {
+  color: var(--Brown-800)
 }
 
 
-tr:hover {
-    background-color: #f1f1f1;
+
+.whiteline {
+  height: 0; 
+  position: relative;
+  padding-top: 1px;
 }
 
-#nutrition__color {
-    color: hsl(11, 33%, 39%);
+.whiteline::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px; 
+  background-color: var(--Stone-150); 
 }
 
-@media (max-width: 375px) {
 
-    body,html {
-      margin: 0;
-    }
 
-    .card {
-        padding: 0px;
-        width: 100%;
-        border-radius: 0;
-    }
 
-    .card__content {
-      margin: 15px;
-    }
-
-    .card__img {
-      border-radius: 0;
-    }
-
-    .card__header {
-        font-size: 32px;
-        margin: 8px 0;
-    }
-
-    .card-prep__title, .card-ingredients__title, .card-instructions__title, .card-nutrition__title {
-        font-size: 20px;
-    }
-
-    .card-prep__title, .card-prep__item, .card-ingredients__list, .card-instructions__list {
-        padding-left: 10px;
-    }
-
-    .card-prep__item, .card-instructions__item {
-        padding-left: 12px;
-    }
-
-    .card-instructions__list {
-        font-size: 14px;
-    }
-
-    th, td {
-        padding: 8px;
-    }
-
-}
