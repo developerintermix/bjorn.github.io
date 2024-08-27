@@ -26,7 +26,7 @@ body {
   justify-content: center;
   align-items: center;
   text-align: start;
-  margin-top: 90px;
+  margin-top: 70px;
   height: 1900px;
 }
 
@@ -47,7 +47,6 @@ body {
 }
 
 .card__content {
-  
   max-width: 656px;
   max-height: 1280px;
   margin: 0 40px;
@@ -70,6 +69,7 @@ body {
 /* stop header */
 .card__prep { 
   background-color:  hsl(330, 100%, 98%);
+  border-radius: 0;
   max-width: 625px;
   max-height:198px;
   text-align: start;
@@ -200,6 +200,8 @@ table td:last-child {
   height: 2px; 
   background-color: var(--Stone-150); 
 }
+
+
 
 
 
