@@ -1,10 +1,14 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+* {
+  font-family: "Outfit", sans-serif;
+    font-style: normal;
+}
 body, html {
     margin: 0;
     padding: 0;
-    height: 130%;
+    margin-top: 15px;
   }
   
 body {
@@ -20,18 +24,15 @@ body {
   .card {
     background-color: #fff; 
     border-radius: 15px; 
-    width: 90%;
+    width: 100%;
     max-width: 600px;
     padding: 20px;
   }
 
-  .card__content {
-    margin: 10px;
-  }
-  
   .card__img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover; 
     border-radius: 8px; 
   }
   
@@ -117,6 +118,10 @@ th, td {
     border-bottom: 1px solid #ddd;
 }
 
+table tr:last-child td {
+  border-bottom: none;
+}
+
 
 tr:hover {
     background-color: #f1f1f1;
@@ -127,13 +132,27 @@ tr:hover {
 }
 
 @media (max-width: 375px) {
+
+    body,html {
+      margin: 0;
+    }
+
     .card {
-        padding: 15px;
-        width: 95%;
+        padding: 0px;
+        width: 100%;
+        border-radius: 0;
+    }
+
+    .card__content {
+      margin: 15px;
+    }
+
+    .card__img {
+      border-radius: 0;
     }
 
     .card__header {
-        font-size: 20px;
+        font-size: 32px;
         margin: 8px 0;
     }
 
