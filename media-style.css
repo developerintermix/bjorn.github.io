@@ -1,0 +1,250 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+
+@media (max-width: 375px) {
+
+  
+    * {
+      font-family: 'Outfit' !important;
+    }
+  
+    :root {
+      --White: hsl(0, 0%, 100%);
+      --Stone-100: hsl(30, 54%, 90%);
+      --Stone-150: hsl(30, 18%, 87%);
+      --Stone-600: hsl(30, 10%, 34%);
+      --Stone-900: hsl(24, 5%, 18%);
+      
+      --Brown-800: hsl(14, 45%, 36%);
+      
+      --Rose-800: hsl(332, 51%, 32%);
+      --Rose-50: hsl(330, 100%, 98%);
+    }
+  
+    * {
+      margin: 0 !important;
+      padding: 0 !important;
+      box-sizing: border-box !important;
+    }
+  
+    body {
+      max-width: 375px !important;
+      height: auto !important;
+      background-color: var(--White) !important;
+    }
+  
+    /* Style for card header */
+    .card__header-img {
+      display: block !important;
+      max-width: 100% !important;
+      height: auto !important;
+      margin-bottom: 40px !important;
+    }
+  
+    .card__title {
+      color: var(--Stone-900) !important;
+      font-size: 36px !important;
+      font-family: 'Young Serif' !important;
+      font-style: normal !important;
+      font-weight: 400 !important;
+      margin-bottom: 24px !important;
+    }
+  
+    .card__header, .card__ingredients, .card__nutrition, .card__instructions {
+      margin: 0 32px !important;
+    }
+  
+    /* Style for card prep */
+    .card__prep {
+      background-color: var(--Rose-50) !important;
+      width: 311px !important;
+      height: 196px !important;
+      padding: 24px !important;
+      margin: 32px 0 32px 32px !important;
+      border-radius: 8px !important;
+    }
+  
+    .card__prep-title {
+      color: var(--Rose-800) !important;
+      font-size: 20px !important;
+      width: 260px !important;
+      height: 20px !important;
+    }
+  
+    .card__prep-item {
+      width: 223px !important;
+      height: 24px !important;
+    }
+  
+    .card__prep-item::marker {
+      color: var(--Rose-800) !important;
+    }
+  
+    .card__prep-item:first-child {
+      margin-top: 16px !important;
+      width: 223px !important;
+      height: 48px !important;
+    }
+  
+    .card__prep-item:last-child {
+      margin-top: 8px !important;
+    }
+  
+    .card__prep-span {
+      color: var(--Stone-600) !important;
+      font-weight: bold !important;
+    }
+  
+    .card__prep-list {
+      width: 263px !important;
+      height: 112px !important;
+      margin-left: 24px !important;
+    }
+  
+    /* Style for card ingredients */
+    .card__ingredients {
+      width: 311px !important;
+      height: 228px !important;
+    }
+  
+    .card__ingredients-title {
+      color: var(--Brown-800) !important;
+      font-size: 28px !important;
+      height: 28px !important;
+    }
+  
+    .card__ingredients-list {
+      margin-top: 24px !important;
+    }
+  
+    .card__ingredients-item {
+      color: var(--Stone-600) !important;
+      font-size: 16px !important;
+      width: 271px !important;
+      height: 24px !important;
+      margin: 0 0 8px 24px !important;
+      padding-left: 16px !important;
+    }
+  
+    .card__ingredients-item:last-child {
+      height: 48px !important;
+      margin-bottom: 0 !important;
+    }
+  
+    .card__ingredients-item::marker {
+      color: var(--Brown-800) !important;
+    }
+  
+    /* Style for whiteline */
+    .whiteline {
+      width: 310px !important;
+      height: 0 !important; 
+      position: relative !important;
+      padding-top: 1px !important;
+      margin: 32px 32px !important;
+    }
+  
+    .whiteline::before {
+      content: '' !important;
+      position: absolute !important;
+      bottom: 0 !important;
+      left: 0 !important;
+      right: 0 !important;
+      height: 2px !important; 
+      background-color: var(--Stone-150) !important;
+    }
+  
+    .card__instructions {
+      height: 668px !important;
+    }
+  
+    .card__instructions-title {
+      height: 28px !important;
+      color: var(--Brown-800) !important;
+      font-size: 28px !important;
+    }
+  
+    .card__instructions-list {
+      margin-top: 24px !important;
+      max-height: 616px !important;
+    }
+  
+    .card__instructions-item {
+      padding-left: 12px !important;
+      margin: 0 0 8px 16px !important;
+      color: var(--Stone-600) !important;
+      width: 311px !important;
+    }
+  
+    .card__instructions-item:nth-child(1) {
+      height: 120px !important;
+    }
+  
+    .card__instructions-item:nth-child(2) {
+      height: 72px !important;
+    }
+  
+    .card__instructions-item:nth-child(3) {
+      height: 96px !important;
+    }
+  
+    .card__instructions-item:nth-child(4), .card__instructions-item:nth-child(5) {
+      height: 120px !important;
+    }
+  
+    .card__instructions-item:nth-child(6) {
+      height: 48px !important;
+    }
+  
+    .card__instructions-item::marker {
+      color: var(--Brown-800) !important;
+      font-weight: bold !important;
+    }
+  
+    .card-instructions__span {
+      font-weight: bold !important;
+    }
+  
+    .card__nutrition {
+      height: 292px !important;
+    }
+  
+    .card__nutrition-title {
+      height: 28px !important;
+      color: var(--Brown-800) !important;
+      font-size: 28px !important;
+    }
+  
+    .card__nutrition-desc {
+      color: var(--Stone-600) !important;
+      font-size: 16px !important;
+      margin: 24px 0 24px !important;
+      height: 48px !important;
+    }
+  
+    table {
+      width: 100% !important;
+      height: 168px !important;
+      border-collapse: collapse !important;
+    }
+  
+    th, td {
+      padding: 16px !important;
+      text-align: left !important;
+      border-bottom: 1px solid #ddd !important;
+    }
+  
+    table tr:last-child td {
+      border-bottom: none !important;
+    }
+  
+    table td:first-child {
+      color: var(--Stone-600) !important;
+    }
+  
+    table td:last-child {
+      color: var(--Brown-800) !important;
+    }
+  
+  }
+  

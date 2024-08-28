@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
 
@@ -110,14 +109,14 @@ body {
 .card__ingredients {
   margin-bottom: 32px;
 }
-.card-list__item, .card-instructions__item {
+.card__list-item, .card__instructions-item {
   padding: 0 0 8px 28px;
   color: var(--Stone-600);
   font-size: 16px;
 }
 
 .card-list__item:last-child {
-  padding: 0 0 32px 28px;
+  padding: 0 0 32px 0;
 }
 
 .card__instructions , .card__nutrition {
@@ -127,35 +126,35 @@ body {
 
 
 
-.card-instructions__item {
+.card__instructions-item {
   padding: 3px;
   padding-left: 20px;
 }
 
-.card-instructions__item::marker, .card-list__item::marker {
+.card__instructions-item::marker, .card__list-item::marker {
   color: hsl(11, 33%, 39%);
   font-weight: bold;
 }
 
 
-.card-instructions__title  {
+.card__instructions-title  {
   margin: 32px 0;
   color: var(--Brown-800);
   font-size: 28px;
 }
 
-.card-nutrition__title { 
+.card__nutrition-title { 
   margin: 0 0 24px 0;
   color: var(--Brown-800);
   font-size: 28px;
 }
 
-.card-nutrition p {
+.card__nutrition p {
   color: var(--Stone-600);
   margin: 0 0 24px 0 ;
 }
 
-.card-instructions__title {
+.card__instructions-title {
   margin-top: 0;
 }
 
@@ -200,9 +199,3 @@ table td:last-child {
   height: 2px; 
   background-color: var(--Stone-150); 
 }
-
-
-
-
-
-
